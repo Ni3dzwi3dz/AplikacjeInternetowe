@@ -16,6 +16,8 @@ class DatabaseConfig:
 @dataclass
 class TokenConfig:
     duration: int  # token duration in seconds
+    algorithm: str
+    secret_key: str
 
 
 @dataclass
