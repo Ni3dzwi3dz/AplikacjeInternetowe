@@ -17,7 +17,9 @@ manager = UserManager(
 )
 
 
-@app.post("/login")
+@app.post(
+    "/login",
+)
 async def login(request: Request):
     username, password = manager.get_values_from_request(request)
 
